@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+a {
+  color: #039be5;
+}
+
 .container {
   height: 100%;
   display: -ms-flexbox;
@@ -36,41 +40,105 @@ body {
 }
 
 .nav {
-  background: #ccc;
-  width: 200px;
-  -ms-flex: 0 200px;
+  background: rgb(36, 40, 42);
+  width: 220px;
+  -ms-flex: 0 220px;
   -webkit-box-flex:  0;
   -moz-box-flex:  0;
   -ms-box-flex:  0;
   box-flex:  0;
+  text-align: left;
+}
+
+.nav h1 {
+  margin: 0px;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.nav h1 a {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .nav ul {
   list-style: none;
   margin: 0px;
-  padding: 0px;
+  padding: 10px 7px;
 }
 
 .nav ul li {
   margin: 0px;
   padding: 0px;
+  font-size: 13px;
+  line-height: 16px
 }
 
 .nav ul li.categoryMenuItem {
-  padding: 10px 7px;
-  background-color: green;
+  padding: 20px 7px 10px;
+  margin: 20px 0px 0px;
+  border-top: 1px solid #555;
+  color: #fff;
+  font-weight: bold;
 }
 
 .nav ul li.playgroundMenuItem {
-  padding: 3px 7px;
+  padding: 5px 0px;
+}
+
+.nav ul li.playgroundMenuItem a {
+  color: #CCC;
+}
+
+.nav ul li.playgroundMenuItem a:hover {
+  color: #EEE;
 }
 
 .main {
-  background: aliceblue;
+  background: #FFF;
   -ms-flex: 1;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
   height: 100%;
+}
+
+.home {
+  text-align: left;
+  padding: 20px;
+}
+
+.home h1 {
+  margin: 20px 0px 0px;
+  font-size: 22px;
+}
+
+.home ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.home ul.main-menu {
+  padding: 10px 7px;
+}
+
+.home ul li {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  line-height: 20px
+}
+
+.home ul li.categoryMenuItem {
+  padding: 20px 7px 10px;
+  margin: 20px 0px 0px;
+  border-top: 1px solid #555;
+  font-weight: bold;
+}
+
+.home ul li.playgroundMenuItem {
+  padding: 5px 0px;
+  list-style: disc;
 }

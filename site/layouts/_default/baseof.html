@@ -12,9 +12,11 @@
     <div class="container">
       {{ block "header" . }}{{ partial "header" . }}{{end}}
 
+      {{ if not .IsHome }}
       <div class="nav">
         {{ block "sidebar" . }}{{ partial "sidebar" . }}{{end}}
       </div>
+      {{ end }}
 
       <div class="main">
         {{ block "main" . }}{{end}}
