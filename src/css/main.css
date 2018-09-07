@@ -75,6 +75,10 @@ a {
   line-height: 16px
 }
 
+.nav ul li.active a {
+  color: #039be5 !important;
+}
+
 .nav ul li.categoryMenuItem {
   padding: 20px 7px 10px;
   margin: 20px 0px 0px;
@@ -122,6 +126,13 @@ a {
 
 .home ul.main-menu {
   padding: 10px 7px;
+}
+
+.home ul.sub-menu .description {
+  color: #777;
+  font-size: 13px;
+  margin-top: 3px;
+  margin-bottom: 5px;
 }
 
 .home ul li {

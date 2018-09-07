@@ -15,6 +15,7 @@
           {{ range .Children }}
             <li class="playgroundMenuItem {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
               <a href="{{ .URL }}">{{ .Name }}</a>
+              <div class="description">{{ .Page.Description }}</div>
             </li>
           {{ end }}
         </ul>
