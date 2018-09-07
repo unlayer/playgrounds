@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+    <title>{{ $.Site.Title }}</title>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+
+    <div class="container">
+      {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+      <div class="nav">
+        {{ block "sidebar" . }}{{ partial "sidebar" . }}{{end}}
+      </div>
+
+      <div class="main">
+        {{ block "main" . }}{{end}}
+      </div>
+
+      {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
