@@ -6,4 +6,6 @@ menu:
   main:
     parent: "javascript"
     identifier: "javascript/basic"
+aliases:
+  - /javascript/
 ---

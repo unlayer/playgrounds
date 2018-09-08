@@ -6,4 +6,6 @@ menu:
   main:
     parent: "react"
     identifier: "react/basic"
+aliases:
+  - /react/
 ---
