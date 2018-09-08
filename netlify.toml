@@ -4,3 +4,7 @@
 
 [context.deploy-preview]
   command = "npm run build-preview"
+
+[[redirects]]
+  from = "/"
+  to = "/javascript/basic"
