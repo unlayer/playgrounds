@@ -153,3 +153,42 @@ a {
   padding: 5px 0px;
   list-style: disc;
 }
+
+.codesandbox-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.codesandbox-container .hover {
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.codesandbox-container .hover .btn {
+  display: none;
+  flex: 1;
+  background-color: rgb(64, 169, 243);
+  color: #FFF;
+  text-decoration: none;
+  max-width: 300px;
+  height: 90px;
+  line-height: 90px;
+  font-size: 28px;
+  border-radius: 45px;
+}
+
+.codesandbox-container .hover .btn:hover {
+  background-color: rgb(102, 185, 244);
+}
+
+.codesandbox-container .hover:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.codesandbox-container .hover:hover .btn {
+  display: block;
+}
