@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmailEditorComponent } from 'angular-email-editor';
 
 @Component({
   selector: 'app-root',
